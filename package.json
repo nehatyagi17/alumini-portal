@@ -1,0 +1,22 @@
+{
+  "name": "alumni-management-portal",
+  "version": "1.0.0",
+  "description": "A comprehensive alumni management system",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "npm run backend:test && npm run frontend:test",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["alumni", "management", "portal", "education"],
+  "author": "Alumni Portal Team",
+  "license": "MIT"
+}
